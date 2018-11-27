@@ -1,0 +1,69 @@
+body {
+background-color:lightgrey;
+font-family:Verdana, sans-serif;
+}
+
+.column-layout {
+max-width:800px;
+background-color:white;
+margin:40px auto 0 auto;
+line-height:1.65;
+padding:20px 40px;
+display:flex;
+}
+
+.main-column {
+flex:3;
+order:1;
+}
+
+.sidebar-one {
+padding-left:15px;
+flex:1;
+order:2;
+}
+
+.call-outs-container {
+max-width:800px;
+margin:40 auto 0 auto;
+display:flex;
+justify-content: space-between;
+}
+
+.call-out {
+padding:20px;
+margin-bottom:20px;
+flex:1;
+width:30%;
+}
+
+.call-out:nth-child(1) {background-color:blue;}
+.call-out:nth-child(2) {background-color:red;}
+
+a:link, a:visited {
+    background-color:black;
+    color: white;
+    padding: 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    box-align:center;
+}
+
+a:hover {
+    background-color: tan;
+    margin: auto;
+  position:relative;
+  transition-property: background-color, border-radius;
+  transition-duration:1s,3s;
+  box-align: center;
+}
+
+a:active {
+  background-color:white;
+}
+
+
+
+
+
