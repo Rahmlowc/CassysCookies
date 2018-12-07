@@ -1,4 +1,4 @@
-body {
+ body {
 background-color:lightgrey;
 font-family:Verdana, sans-serif;
 }
@@ -35,32 +35,48 @@ padding:20px;
 margin-bottom:20px;
 flex:1;
 width:30%;
+text-align: center;
 }
 
-.call-out:nth-child(1) {background-color:blue;}
-.call-out:nth-child(2) {background-color:red;}
+.call-out:nth-child(1) {background-color:blue; padding:10px; margin:10px;}
+.call-out:nth-child(2) {background-color:red; padding:10px; margin:10px;}
 
-a:link, a:visited {
-    background-color:black;
-    color: white;
-    padding: 25px;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
-    box-align:center;
+.menu-layout {
+  display: flex;
+  margin: 0px auto;
+  max-width:930px;
+  width: 100%;
+  justify-content: space-between
 }
 
-a:hover {
-    background-color: tan;
-    margin: auto;
-  position:relative;
+.menu-item{
+  flex: 1;
+  text-align: center;
+  color: white;
+  background-color: teal;
+  box-sizing: border-box;
+  line-height: 1.65;
+  padding: 1em 0em;
+  margin: 1em;
+  flex-basis: 30%;
   transition-property: background-color, border-radius;
-  transition-duration:1s,3s;
-  box-align: center;
+  transition-duration: 2s, 1s;
 }
 
-a:active {
-  background-color:white;
+.menu-item a:link, a:hover, a:visited, a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  background-color: orange;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logo {
+  width:15px;
+  height:15px;
 }
 
 
