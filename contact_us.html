@@ -9,7 +9,7 @@
   <body>
     
     <div class="menu-layout">
-      <div class="menu-item">Home</div>
+      <div class="menu-item"><a href="mainpage.html">Home</a></div>
       <div class="menu-item">Products and Services</div>
       <div class="menu-item"><a href="contact_us.html">Contact Us</a></div>
     </div>
@@ -29,6 +29,8 @@
         <b>Sat:</b> 9am - 5pm</p>
       </div>
     </div>
+     <div id="map"></div>
+    
     <div class="call-outs-container">
       <div class="call-out">
       <h4>Christmas Day Bonus</h4>
@@ -40,5 +42,16 @@
       <p>It's finally friday everyone and that calls for a treat come on down to Cassy's Cookies for some 75% off treats. You deserve it!</p>
       </div>
     </div>
+     <script>
+function initMap() {
+  var uluru = {lat: 44.1108112, lng: -87.6983396};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0e0W1ICK1sCU8cR--3xgrEIOrQEsDrvU&callback=initMap">
+    </script>
   </body>
 </html>
