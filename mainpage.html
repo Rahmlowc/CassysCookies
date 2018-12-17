@@ -18,21 +18,22 @@
       <div class="main-column">
       <h2>About Cassy's Cookies</h2>
       <p> Hello and welcome to my bakery, the number one bakery here in Wisconsin. We make the basic things you can find in a bakery, but then we have our signiture cookies. These cookies are all made in store and personally made by me, Cassy of Cassy's Cookies, made home made every day. I put a whole cup of love in each and every one of these cookies. So come on in and taste for yourself the love I put into these cookies.</p>
-      <p> This place means so much to me and I am so glad that my dream has come true. It's all because of you that all these things have happened for me and I love all the people that come to my bakery to enjoy my deserts. My employees and I would like to says thnk you for everything you do and that all of you are beautiful and kind.</p>
+      <p> This place means so much to me and iIam so glad that my dream has come true. It's all because of you that all these things have happened for me and I love all the people that come to my bakery to enjoy my deserts. My employees and I would like to says thnk you for everything you do and that all of you are beautiful and kind.</p>
       <p> This wedsite is filled with all things we make and can make for you. Just click over on the side that says <i>menu.</i> Every Wednesday morning there is a book club so if you would like to join click over on the side that says <i>bookclub information.</i> And don't forget about our anual Christmas Party coming up soon. For more information on hte side click <i>Christmas Party.</i></p>
       </div>
 
       <div class="sidebar-one">
-        <div class="logo">
-          <link href="onlinelogomaker.com/logomaker/?project=56055086">
-        </div>
+        <img id="logo" src="onlinelogomaker.com/logomaker/?project=56055086">
       <h3>Things To Look For</h3>
       <li>Menu</li>
       <li>Bookclub Information</li>
       <li>Christmas Party</li>
       </div>
     </div>
-    <div class="call-outs-container">
+    
+    <button id="hibu" onclick="hideos()">Hide Offers</button>
+    
+    <div id="coc" class="call-outs-container">
       <div class="call-out">
       <h4>Christmas Day Bonus</h4>
       <p>With every one dozen Christmas cookies bought you will recieve another dozen half the cost! Only on Christmas Day!</p>
@@ -43,5 +44,19 @@
       <p>It's finally friday everyone and that calls for a treat come on down to Cassy's Cookies for some 75% off treats. You deserve it!</p>
       </div>
     </div>
+    
+    <script>
+      function hideos() {
+        var x=document.getElementById("coc");
+        var y=document.getElementById("hibu");
+        x.style.display="none";
+        y.style.display="none";
+      }
+    </script>
+    
+    
+    
+    
+    
   </body>
 </html>
